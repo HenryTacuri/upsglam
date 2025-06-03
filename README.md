@@ -114,3 +114,7 @@ En la sección de perfil se muestra toda nuestra información personal de nuestr
   <img src="imagenes_uso_app\perfil.jpg" width="300"/>
 </p>
 
+
+**Link del informe:** https://drive.google.com/file/d/1_FsCDYix6oPOUuTGqLER_BTCgvzAQk38/view?usp=sharing
+
+**Link de las Presentaciones:** https://drive.google.com/file/d/1zXSEoE7oGkxbMT_I0GoPCaqOKRXAFDAN/view?usp=sharing
