@@ -1,0 +1,21 @@
+version: '3.8'  # Versión de Docker Compose compatible con Docker Engine 19.03+
+
+services:
+  python_app:
+    image: henrytacuri/upsglam_pycuda:latest  # Imagen que incluye la app Python con soporte CUDA
+    container_name: python_app               # Nombre personalizado para el contenedor
+    ports:
+      - "5000:5000"                           # Mapea el puerto 5000 del host al 5000 del contenedor
+    restart: unless-stopped                   # Reinicia el contenedor a menos que se detenga manualmente
+    runtime: nvidia                           # Ejecuta con runtime NVIDIA para acceso a GPUs
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all            # Expone todas las GPUs disponibles al contenedor
+
+  backend:
+    image: henrytacuri/upsglam_backend:latest # Imagen del servicio backend
+    container_name: upsglam_backend           # Nombre personalizado para el contenedor del backend
+    ports:
+      - "8080:8080"                           # Mapea el puerto 8080 del host al 8080 del contenedor
+    restart: unless-stopped                   # Reinicia automáticamente salvo que se detenga manualmente
+    depends_on:
+      - python_app                            # Se inicia después de que python_app haya arrancado
