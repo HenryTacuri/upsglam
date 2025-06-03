@@ -115,6 +115,26 @@ En la sección de perfil se muestra toda nuestra información personal de nuestr
 </p>
 
 
+# **Reflexión sobre el uso de tecnologías paralelas, reactivas y en la nube en UPSGlam 2.0**
+
+**Computación Paralela con CUDA**
+
+
+La aplicación de PyCUDA para el procesamiento de imágenes resultó fundamental para alcanzar un alto rendimiento en la aplicación de filtros personalizados. Diseñamos e implementamos filtros tanto clásicos como creativos, incluyendo uno con elementos representativos de la UPS. La optimización y procesamiento paralelo tiene grandes ventajas para trabajar con grandes volúmenes de datos, ya que permite dividir y distribuir tareas en un entorno de procesamiento masivo como lo es una GPU.
+
+
+
+**Programación Reactiva con WebFlux**
+
+En el backend, utilizamos Spring WebFlux para construir una arquitectura reactiva basada en microservicios. Este enfoque nos permitió manejar múltiples peticiones concurrentes de forma eficiente, manteniendo una comunicación fluida entre los distintos servicios y facilitando la integración con Firebase. La naturaleza no bloqueante de WebFlux fue clave para mantener un flujo continuo de datos y para soportar escenarios de alta demanda. Aunque las interacciones cómo likes y comentarios se gestionaron desde el frontend, el backend brindó soporte estable para la persistencia y consulta en tiempo real a través de Firebase.
+
+
+**Servicios en la Nube con Firebase**
+
+
+Firebase fue una herramienta central en la estructura de la aplicación. Nos permitió implementar autenticación segura, almacenamiento de publicaciones y carga eficiente de imágenes procesadas. Gracias a Firebase Hosting y Storage, expusimos contenidos a través de URLs públicas, lo cual facilitó su integración con la aplicación móvil. Además, el uso de Firestore como base de datos NoSQL nos proporcionó flexibilidad y escalabilidad.
+
+
 **Link del informe:** https://drive.google.com/file/d/1_FsCDYix6oPOUuTGqLER_BTCgvzAQk38/view?usp=sharing
 
 **Link de las presentaciones:** https://drive.google.com/file/d/1zXSEoE7oGkxbMT_I0GoPCaqOKRXAFDAN/view?usp=sharing
