@@ -135,6 +135,8 @@ En el backend, utilizamos Spring WebFlux para construir una arquitectura reactiv
 Firebase fue una herramienta central en la estructura de la aplicación. Nos permitió implementar autenticación segura, almacenamiento de publicaciones y carga eficiente de imágenes procesadas. Gracias a Firebase Hosting y Storage, expusimos contenidos a través de URLs públicas, lo cual facilitó su integración con la aplicación móvil. Además, el uso de Firestore como base de datos NoSQL nos proporcionó flexibilidad y escalabilidad.
 
 
+----------
+
 **Link del informe:** https://drive.google.com/file/d/1_FsCDYix6oPOUuTGqLER_BTCgvzAQk38/view?usp=sharing
 
 **Link de las presentaciones:** https://drive.google.com/file/d/1zXSEoE7oGkxbMT_I0GoPCaqOKRXAFDAN/view?usp=sharing
